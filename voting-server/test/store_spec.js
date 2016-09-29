@@ -13,10 +13,10 @@ describe('store', () => {
       type: 'SET_ENTRIES',
       entries: ['Trainspotting', '28 days later']
     });
+
     expect(store.getState()).to.equal(fromJS({
       entries: ['Trainspotting', '28 days later']
     }));
   });
-
 
 });
