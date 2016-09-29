@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js \"test/**/*@(.js|.jsx)\"",
     "test:watch": "npm run test -- --watch"
   },
@@ -27,13 +28,15 @@
     "presets": [
       "es2015",
       "react"
-    ]
+    ],
+    "plugins": ["react-hot-loader/babel"]
   },
   "dependencies": {
     "immutable": "^3.8.1",
     "react": "^15.3.2",
     "react-addons-pure-render-mixin": "^15.3.2",
     "react-addons-test-utils": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "react-router": "^2.0.0"
   }
 }
