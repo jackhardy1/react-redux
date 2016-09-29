@@ -29,7 +29,9 @@
       "es2015",
       "react"
     ],
-    "plugins": ["react-hot-loader/babel"]
+    "plugins": [
+      "react-hot-loader/babel"
+    ]
   },
   "dependencies": {
     "immutable": "^3.8.1",
@@ -37,6 +39,7 @@
     "react-addons-pure-render-mixin": "^15.3.2",
     "react-addons-test-utils": "^15.3.2",
     "react-dom": "^15.3.2",
-    "react-router": "^2.0.0"
+    "react-router": "^2.0.0",
+    "redux": "^3.6.0"
   }
 }
